@@ -23,7 +23,7 @@ categories: digest
 </ul>
 
 <p>I was working on creating my base site structure.</p>
-<p>I have been working on www.alexdmv.com website</p>
+<p>I have been working on <a href="http://www.alexdmv.com">www.alexdmv.com</a> website</p>
 <p>I have also wrote a JS program that converts temperature. I am almost JS ninja! Lol</p>
 <p>Finished week 1 of Diploma in Photography of <a href="http://www.shawacademy.com/">http://www.shawacademy.com/</a></p>
 <p>Went through a dozen of FFC waypoints in JS</p>
