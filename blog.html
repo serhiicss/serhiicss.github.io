@@ -5,7 +5,7 @@ layout: default
 <ul>
   {% for post in site.posts limit:5 %}
   <li>
-    <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+    <a class="post-title" href="{{ post.url }}">{{ post.title }} {{ page.date | date: '%B %d, %Y' }}</a>
     <p>{{ post.meta }}</p>
   </li>
   {% endfor %}
