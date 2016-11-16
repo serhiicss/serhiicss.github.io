@@ -1,0 +1,81 @@
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/
+  .intro {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /**/
+  header .logo {
+    top: 0;
+    margin-bottom: 50px; }
+  header ul li:nth-child(3) {
+    display: none; }
+  header ul a {
+    font-size: 15px;
+    font-weight: bold; } }
+
+/* Custom */
+@media only screen and (max-width: 640px) {
+  .models_wrap,
+  .section__features {
+    text-align: center; }
+  .section__models img,
+  .feature__img {
+    float: none;
+    margin-bottom: 30px; }
+  .feature__img {
+    margin: 0; }
+  .feature__item h2 {
+    margin-top: 20px; }
+  .feature__item:last-child {
+    margin-bottom: 0; }
+  .section__gallery .grid {
+    margin-bottom: 40px;
+    max-width: 200px; }
+  .section__gallery a {
+    display: block; }
+    .section__gallery a.g__5 {
+      position: static; } }
+
+@media only screen and (min-width: 640px) {
+  .section__gallery .grid {
+    height: 470px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/ }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
