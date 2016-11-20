@@ -1,13 +1,14 @@
 ---
 layout: default
 ---
-
-<ul>
-  {% for post in site.posts limit:5 %}
-  <li>
-    <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
-    <p>{{ post.meta }}</p>
-    <date class="post-date">{{ post.date | date: '%B %d, %Y' }}</date>
-  </li>
-  {% endfor %}
-</ul>
+<section class="blog">
+  <ul class="post-list">
+    {% for post in site.posts limit:5 %}
+    <li>
+      <date class="post-date">{{ post.date | date: '%B %d, %Y' }}</date>
+      <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+      <p class="post-meta">{{ post.meta }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
