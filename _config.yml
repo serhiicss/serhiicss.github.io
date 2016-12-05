@@ -2,4 +2,4 @@
 title: serhii.css
 description: Serhii Borovskyi. Teaching myself web design and development.
 markdown: kramdown
-exclude: ["README.md", "node_modules", "gulpfile.js", "package.json", 'mywork']
+exclude: ["README.md", "node_modules", "gulpfile.js", "package.json"]
