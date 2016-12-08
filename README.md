@@ -1,7 +1,5 @@
 # serhii-css.com
 
-My website
+My personal website.
 
-TO DO:
-
-Create an asset folder for images and stuff.
+http://serhii-css.com/
