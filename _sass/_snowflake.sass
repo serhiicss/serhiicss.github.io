@@ -1,0 +1,29 @@
+@media screen and (min-width:768px)
+  .snowflake
+    display: block
+    width: 20px
+    height: 20px
+    background-size: 20px 20px
+    position: absolute
+    top: -10vh
+    z-index: 0
+    animation-name: falling
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+    @keyframes falling
+      0%
+        top: -10vh
+        opacity: 1
+      100%
+        top: 500px
+        opacity: 0
+
+  $i: 1
+  @while $i <= 10
+    .snowflake:nth-child(#{$i})
+      right: 5vw + $i * 9
+      animation-duration: 10s + $i
+      animation-delay: random(11)+$i+s
+      background-image: url('../assets/img/snowflake-#{random(6)}.svg')
+    $i: $i + 1
+
