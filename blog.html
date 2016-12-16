@@ -3,7 +3,7 @@ layout: default
 ---
 <section class="blog">
   <ul class="post-list">
-    {% for post in site.posts limit:5 %}
+    {% for post in site.posts limit:15 %}
     <li>
       <date class="post-date">{{ post.date | date: '%B %d, %Y' }}</date>
       <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
