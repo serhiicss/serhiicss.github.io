@@ -1,26 +1,33 @@
 // ------------- Vars ---------------------
 $blue: #03A9F4
-$yellow: #FFB600
-$red: #FF2C00
-$color-text: #767676
+$color-text: #888
 
-// $color-primary: #455469
-// $color-secondary: #be393b
 $color-primary: $color-text
 $color-secondary: $blue
+$color-invert: #fff
+$color-accent: tomato
+
+$font-headings: 'Lato', Helvetica
+$font-text: 'Merriweather Sans', Helvetica
 
 *
   box-sizing: border-box
 
+html
+  font-size: 62.5%
+
 html, body
-  min-width: 320px
+  // min-width: 320px
 
 body
   background-color: #fff
   color: $color-primary
-  font-size: 1.2rem
-  font-family: 'Merriweather Sans', Helvetica
-  line-height: 1.518em
+  font-size: 12pt
+  font-family: $font-text
+  line-height: 1.75em
+  margin: 0
+  padding: 0
+  transition: all 0.5s ease
 
 img
   max-width: 100%
@@ -29,26 +36,33 @@ img
 a
   color: $color-secondary
   text-decoration: none
-  &:hover
-    text-decoration: underline
 
 
 h1, h2, h3, h4, h5, h6
+  line-height: 1em
+  font-family: $font-headings
+  font-weight: 400
+  margin: 0
+  padding: 0
 
-h1, h2
-  font-family: 'Lato', Helvetica
-  font-size: 2.2rem
+h1
+  font-size: 3.2rem
 
 h2
-  font-size: 1.4rem
+  font-size: 2.4rem
 
 h3
-  font-size: 1.2rem
+  font-size: 2.2rem
+
+h1 + h2
+  margin: 1em 0 0 0
+
+h1 + p
+  margin: 1.2em 0 0 0
 
 p
-  margin-top: 1em
+  margin-top: 0.5em
   margin-bottom: 0.5em
-  font-size: 1.2rem
 
 ul
   list-style: none
