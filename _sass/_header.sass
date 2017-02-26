@@ -12,7 +12,8 @@ header.main
         display: block
         padding: 0.6em  
         color: $color-invert
-        border-bottom: 1px solid transparent
+        border-bottom: 3px solid transparent
+        +trans(0.4)
         &:hover,
-        &:focus li
-          border-color: $color-invert
+        &:focus
+          color: darken($color-secondary, 20%)
