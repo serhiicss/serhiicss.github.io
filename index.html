@@ -9,3 +9,15 @@ layout: default
 	<h1>Serhii Borovskyi</h1>
 	<p>web designer and developer</p>
 </div>
+
+<section class="featured-blog blog w-container">
+  <ul class="post-list">
+    {% for post in site.posts limit:1 %}
+    <li>
+      <date class="post-date">{{ post.date | date: '%B %d, %Y' }}</date>
+      <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+      <p class="post-meta">{{ post.meta }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

@@ -42,7 +42,7 @@ gulp.task('jekyll', () => {
 gulp.task('serve', () => {
 	browserSync.init({
 		files: [siteRoot + '/**'],
-		port: 4000,
+		port: 3000,
 		server: {
 			baseDir: siteRoot
 		}

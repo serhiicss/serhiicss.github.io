@@ -25,7 +25,7 @@ body
   color: $color-primary
   font-size: 12pt
   font-family: $font-text
-  line-height: 1.75em
+  line-height: 1.5
   margin: 0
   padding: 0
   transition: all 0.5s ease
@@ -40,7 +40,6 @@ a
 
 
 h1, h2, h3, h4, h5, h6
-  line-height: 1em
   font-family: $font-headings
   font-weight: 400
   margin: 0
@@ -76,51 +75,10 @@ ul, li
   display: none !important
 
 .w-container
-  max-width: 1000px
+  max-width: 900px
   margin: 0 auto
+  @media (max-width: 899px)
+    padding: 0 1em
 
 =trans($time)
   transition: all $time+s ease
-
-// -------------------------------------------
-//------------ MEDIA QUERRY MIXIN ------------
-// -------------------------------------------
-
-@mixin for-phone-only
-  @media (max-width: 599px)
-    @content
-
-
-@mixin for-tablet-portrait-up
-  @media (min-width: 600px)
-    @content
-
-
-@mixin for-tablet-portait-only
-  @media (min-width: 600px) and (max-width: 899px)
-    @content
-
-
-@mixin for-tablet-landscape-up
-  @media (min-width: 900px)
-    @content
-
-
-@mixin for-tablet-landscape-only
-  @media (min-width: 900px) and (max-width: 1199px)
-    @content
-
-
-@mixin for-desktop-up
-  @media (min-width: 1200px)
-    @content
-
-
-@mixin for-desktop-only
-  @media (min-width: 1200px) and (max-width: 1799px)
-    @content
-
-
-@mixin for-big-desktop-up
-  @media (min-width: 1800px)
-    @content
