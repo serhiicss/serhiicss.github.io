@@ -1,9 +1,14 @@
+// 1. blog page (list of blog posts)
+// 2. blog post (individual posts)
+// 3. blog post featured on home page styled in main.sass
+
+
 // -------------------------------------------
 //------------ BLOG PAGE ---------------------
 // -------------------------------------------
 
-
-section.blog-page
+section.blog-page,
+section.featured-blog
 	ul
 		margin-top: 2em
 	li
@@ -42,9 +47,6 @@ section.blog-page
 		.post-meta
 			font-size: 1.8rem
 
-// .featured-blog
-// 	margin-top: 2em
-
 
 // -------------------------------------------
 //------------ POST PAGE ---------------------
@@ -81,3 +83,31 @@ a.post-title
 	ul
 		list-style: inherit
 		padding-left: 2em
+
+// -------------------------------------------
+//------------ 	FEATURED BLOG ----------------
+// -------------------------------------------
+
+// section.featured-blog
+// 	h2
+// 		text-align: center
+// 		margin-top: 1em
+// 		font-size: 3rem
+// 		span
+// 			color: $color-secondary
+// 	a
+// 		display: block
+// 	.featured-post
+// 		max-width: 700px
+// 		margin: 0 auto
+// 		margin-top: 2em
+// 	.post-date
+// 		display: inline-block
+// 		margin-top: 0
+// 		padding: 0 1em
+// 	.post-title
+// 		display: block
+// 		margin-top: 0.6em
+// 		padding: 0
+// 		font-size: 2.1rem
+// 		color: darken($color-primary, 20%)
