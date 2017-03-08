@@ -1,0 +1,972 @@
+/*
+
+Site coded by Serhii Borovskyi
+http://serhii-css.com
+
+
+Fashionista site based on Fashionista Responsive Email Newsletter by RocketWay. 
+https://psdrepo.com/free-psd/fashionista-responsive-email-newsletter-freebie/
+
+Some icons/graphics used from  http://www.freepik.com/
+Some photos used from https://unsplash.com/ and https://pixabay.com/
+
+Code is to be used free for personal or commercial used.
+
+Graphics, icons and photos are to be used according to the licenses of their respective owners.*/
+
+/*========================================================================== */
+
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  font-size: 0.875rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400; }
+
+.wrapper {
+  max-width: 900px;
+  min-width: 320px;
+  width: 95%;
+  margin: 0 auto; }
+
+h1,
+h2,
+h3 {
+  color: #272727;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+p {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  color: #757575; }
+
+a {
+  color: #272727; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.hidden {
+  display: none; }
+
+section {
+  text-align: center; }
+
+section.light {
+  background-color: #fff;
+  padding: 65px 0; }
+
+section.dark {
+  background-color: #f5f5f5;
+  padding: 65px 0; }
+
+section.special {
+  background-color: #e76450;
+  padding: 25px 0 40px 0; }
+  section.special h1 {
+    color: #fff;
+    font-size: 1.625rem; }
+    section.special h1 span {
+      display: block;
+      font-size: 4.8125rem;
+      font-weight: 700; }
+
+header {
+  text-transform: uppercase;
+  color: #272727;
+  text-align: center;
+  padding-bottom: 58px;
+  max-width: 600px;
+  margin: 0 auto; }
+  header .logo {
+    border-bottom: 1px solid #272727;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1.3125rem;
+    letter-spacing: 5px;
+    margin-top: 58px;
+    position: relative;
+    padding-bottom: 3px;
+    top: 23px; }
+  header ul {
+    list-style: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    header ul li {
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+    header ul li:nth-child(3) {
+      -ms-flex-positive: 8;
+          flex-grow: 8; }
+    header ul a {
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.6875rem; }
+
+.intro {
+  display: -ms-flexbox;
+  display: flex; }
+
+.intro__title {
+  background-color: #f5f5f5;
+  max-width: 450px;
+  padding: 120px 0 40px 0;
+  text-align: center;
+  width: 100%; }
+
+.intro__title h1 {
+  font-size: 3.375rem;
+  line-height: 2.5rem; }
+  .intro__title h1 small,
+  .intro__title h1 span {
+    font-size: 2.0625rem; }
+  .intro__title h1 span {
+    color: #e76450; }
+
+.section__2 h2 {
+  margin-bottom: 30px; }
+
+.section__2 p {
+  max-width: 650px;
+  margin: 0 auto 30px; }
+
+.section__2 .terms {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 650px;
+  margin: 60px auto 0; }
+
+.section__2 .terms_box {
+  background-color: #272727;
+  padding: 25px 0 30px 0;
+  max-width: 290px;
+  margin-top: 20px; }
+  .section__2 .terms_box span {
+    width: 285px; }
+    .section__2 .terms_box span:before, .section__2 .terms_box span:after {
+      background-color: #5d5d5d;
+      content: '';
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 70px; }
+    .section__2 .terms_box span:before {
+      right: 35px; }
+    .section__2 .terms_box span:after {
+      left: 35px; }
+    .section__2 .terms_box span .fa-stack-2x {
+      color: #e76450; }
+  .section__2 .terms_box h3,
+  .section__2 .terms_box p {
+    color: #fff;
+    padding-top: 10px; }
+  .section__2 .terms_box p {
+    margin: 0; }
+  .section__2 .terms_box hr {
+    background-color: #5d5d5d;
+    border: none;
+    height: 1px;
+    margin: 0 auto;
+    width: 190px;
+    margin-top: 20px; }
+
+.section__accessoires h2 {
+  margin-bottom: 50px; }
+
+.section__accessoires p {
+  color: #272727; }
+
+.accessoires__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 650px;
+  margin: 0 auto; }
+  .accessoires__wrap .accessoires__item {
+    margin-right: 30px; }
+    .accessoires__wrap .accessoires__item .accessoires__circle {
+      display: inline-block;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 105px 105px;
+      border-radius: 50%;
+      height: 165px;
+      transition: all 0.5s ease;
+      width: 165px; }
+      .accessoires__wrap .accessoires__item .accessoires__circle:hover {
+        background-color: #e76450; }
+    .accessoires__wrap .accessoires__item .jewellery {
+      background-image: url("../img/accessories/jewellery.svg"); }
+    .accessoires__wrap .accessoires__item .purses {
+      background-image: url("../img/accessories/purses.svg"); }
+    .accessoires__wrap .accessoires__item .belts {
+      background-image: url("../img/accessories/belts.svg"); }
+    .accessoires__wrap .accessoires__item .hats {
+      background-image: url("../img/accessories/hats.svg"); }
+    .accessoires__wrap .accessoires__item .handbags {
+      background-image: url("../img/accessories/handbags.svg"); }
+    .accessoires__wrap .accessoires__item .eyewear {
+      background-image: url("../img/accessories/eyewear.svg"); }
+  .accessoires__wrap p {
+    font-size: 0.6875rem;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    margin: 20px 0 40px 0;
+    text-transform: uppercase; }
+
+.section__models {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: left; }
+  .section__models img {
+    float: left;
+    width: 200px;
+    margin-right: 40px; }
+  .section__models h2 {
+    margin-bottom: 30px; }
+  .section__models p {
+    margin-bottom: 20px; }
+
+.section__gallery h1 {
+  margin-bottom: 65px; }
+
+.section__gallery .grid {
+  display: block;
+  max-width: 650px;
+  margin: 0 auto; }
+
+.section__gallery a {
+  display: inline-block;
+  height: 290px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 2px;
+  transition: all 0.5s ease;
+  vertical-align: top;
+  width: 192px; }
+  .section__gallery a:nth-child(even) {
+    height: 132px; }
+  .section__gallery a:hover {
+    opacity: 0.8; }
+  .section__gallery a.g__1 {
+    background-image: url("../img/gallery/g__1.jpg"); }
+  .section__gallery a.g__2 {
+    background-image: url("../img/gallery/g__2.jpg"); }
+  .section__gallery a.g__3 {
+    background-image: url("../img/gallery/g__3.jpg"); }
+  .section__gallery a.g__4 {
+    background-image: url("../img/gallery/g__4.jpg"); }
+  .section__gallery a.g__5 {
+    background-image: url("../img/gallery/g__5.jpg");
+    position: relative;
+    top: -158px; }
+  .section__gallery a.g__6 {
+    background-image: url("../img/gallery/g__6.jpg"); }
+
+.section__style .style__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 650px;
+  margin: 0 auto; }
+
+.section__style .style__box {
+  max-width: 280px;
+  margin-bottom: 60px; }
+  .section__style .style__box:last-child {
+    margin-bottom: 0; }
+
+.section__style .style__circle {
+  display: inline-block;
+  background-color: #272727;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 45px 45px;
+  border-radius: 50%;
+  height: 85px;
+  margin-bottom: 30px;
+  width: 85px; }
+
+.section__style .circle_1 {
+  background-image: url("../img/shoe.svg"); }
+
+.section__style .circle_2 {
+  background-image: url("../img/craft.svg"); }
+
+.section__style h2 {
+  margin-bottom: 35px; }
+
+.section__style p {
+  margin-bottom: 30px; }
+
+.section__products {
+  background-color: #272727;
+  background-image: url("../img/products/watch-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif; }
+  .section__products p:nth-child(3) {
+    font-family: "Lato", sans-serif; }
+  .section__products a.product {
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 102px 192px;
+    display: inline-block;
+    height: 235px;
+    transition: all 0.3s ease;
+    width: 185px; }
+    .section__products a.product:hover {
+      opacity: 0.7; }
+  .section__products a.product__1 {
+    background-image: url("../img/products/watch1.svg"); }
+  .section__products a.product__2 {
+    background-image: url("../img/products/watch2.svg"); }
+  .section__products a.product__3 {
+    background-image: url("../img/products/watch3.svg"); }
+
+.products__h1 {
+  color: #fff;
+  margin-bottom: 60px; }
+
+.products__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.product_box {
+  width: 185px;
+  background-color: #fff;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 30px; }
+
+p.product__option {
+  color: #272727;
+  margin: 20px 0 10px 0;
+  text-transform: uppercase; }
+
+p.old__price {
+  margin-top: 20px;
+  text-decoration: line-through; }
+
+p.new__price {
+  color: #e76450;
+  font-size: 1.375rem;
+  margin: 5px 0 30px 0; }
+
+.section__features {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: left; }
+  .section__features h2 {
+    margin-bottom: 35px; }
+  .section__features p {
+    margin-bottom: 35px; }
+
+.feature__img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+  height: 240px;
+  width: 280px; }
+
+.feature__img__1 {
+  background-image: url("../img/features/feature_1.jpg");
+  float: left;
+  margin-right: 40px; }
+
+.feature__img__2 {
+  background-image: url("../img/features/feature_2.jpg");
+  float: right;
+  margin-left: 40px; }
+
+.feature__item {
+  margin-bottom: 90px; }
+  .feature__item:last-child {
+    margin-bottom: 90px; }
+
+section.section__outlet h1 span {
+  font-size: 58px;
+  margin: 20px 0; }
+
+.collection__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.6875rem;
+  max-width: 650px;
+  margin: 50px auto 0 auto; }
+  .collection__wrap p {
+    color: #272727;
+    margin: 20px 0 30px 0; }
+  .collection__wrap .collection__item {
+    margin-right: 30px; }
+    .collection__wrap .collection__item .collection__circle {
+      display: inline-block;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 120px auto;
+      border-radius: 50%;
+      height: 220px;
+      transition: all 0.5s ease;
+      width: 220px; }
+      .collection__wrap .collection__item .collection__circle:hover {
+        border: 20px solid #e76450; }
+    .collection__wrap .collection__item .collection__bracelet {
+      background-image: url("../img/collection/bracelet.jpg"); }
+    .collection__wrap .collection__item .collection__handbag {
+      background-image: url("../img/collection/handbag.jpg"); }
+    .collection__wrap .collection__item .collection__shoe {
+      background-image: url("../img/collection/shoe.jpg"); }
+    .collection__wrap .collection__item .collection__watch {
+      background-image: url("../img/collection/watch.jpg"); }
+
+.services__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 650px;
+  margin: 0 auto; }
+
+a.service {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white; }
+  a.service i {
+    line-height: 60px; }
+  a.service .fa {
+    color: #e76450; }
+
+.service__box {
+  background-color: #272727;
+  padding: 30px 25px;
+  width: 180px;
+  margin-bottom: 5px; }
+  .service__box h2,
+  .service__box p {
+    color: #fff;
+    margin-top: 25px; }
+  .service__box p {
+    margin-bottom: 25px; }
+
+footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 65px 0 25px 0; }
+  footer h2 {
+    font-size: 1.3125rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 20px; }
+  footer p {
+    color: #757575;
+    font-size: 0.75rem;
+    margin-bottom: 40px; }
+  footer .social__icons {
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    margin: 0 auto;
+    padding: 5px 0;
+    width: 80%; }
+  footer .fa {
+    font-size: 1.125rem;
+    margin: 10px; }
+    footer .fa:hover {
+      color: #e76450; }
+
+.copyright {
+  margin-top: 30px;
+  margin-bottom: 0; }
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0;
+  color: #e76450;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.15625em;
+  padding: 0.9375em 1.3125em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  white-space: nowrap; }
+
+.button__default {
+  color: #e76450;
+  border-color: #e76450; }
+  .button__default:hover, .button__default:focus {
+    color: #fff;
+    background-color: #e76450; }
+
+.button__action {
+  background-color: #e76450;
+  color: #fff; }
+  .button__action:hover, .button__action:focus {
+    color: #e76450;
+    background-color: transparent;
+    border-color: #e76450; }
+
+.button__cta {
+  font-size: 0.75rem; }
+
+.button__special {
+  background-color: #fff; }
