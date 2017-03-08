@@ -2,7 +2,39 @@
 layout: default
 ---
 
-<section class="main">
-  <h1>Serhii Borovskyi</h1>
-  <h2>A self-teaching web designer and developer</h2>
+<div class="hero">
+	<div class="logo">
+		<img src="../assets/img/logo.png" alt="serhii.css logo" class="img-logo">
+	</div>
+	<h1>Serhii Borovskyi</h1>
+	<p>web designer and developer</p>
+</div>
+
+<section class="featured w-container">
+
+  <h2>Latest blog post</h2>
+
+  <div class="featured-post">
+    {% for post in site.posts limit:1 %}
+    <a href="{{ post.url }}">
+      <p class="post-title">{{ post.title }}</p>
+    </a>
+    {% endfor %}
+  </div><!-- featured-post -->
+
+
 </section>
+
+<section class="featured w-container">
+
+  <h2>My recent work</h2>
+
+  <div class="featured-work">
+    <a href="http://serhii-css.com/Kafeinate/">
+      <div class="work-descr">
+        Kafeinate - A coffee shop website
+      </div>
+      <img src="assets/img/kafeinate.jpg" alt="Kafeinate">
+    </a>
+  </div>
+</section><!-- featured-work -->
