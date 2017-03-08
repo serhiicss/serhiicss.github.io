@@ -10,7 +10,9 @@ $color-accent: tomato
 $font-headings: 'Lato', Helvetica
 $font-text: 'Merriweather Sans', Helvetica
 
-*
+*,
+*:before,
+*:after
   box-sizing: border-box
 
 html
@@ -19,16 +21,15 @@ html
 html, body
   margin: 0
   padding: 0
+  height: 100%
 
 body
+  position: relative
   background-color: #fff
   color: $color-primary
-  font-size: 12pt
   font-family: $font-text
+  font-size: 12pt
   line-height: 1.5
-  margin: 0
-  padding: 0
-  transition: all 0.5s ease
 
 img
   max-width: 100%
