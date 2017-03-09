@@ -1,54 +1,35 @@
-// gulpfile setup bsed on:
-// https://aaronlasseigne.com/2016/02/03/using-gulp-with-jekyll/
-
-const child = require('child_process');
-const browserSync = require('browser-sync').create();
-
-const gulp = require('gulp');
-const gutil = require('gulp-util');
-const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
-const notify = require("gulp-notify");
+var gulp = require('gulp');
+		shell = require('gulp-shell');
+		sass           = require('gulp-sass'),
+		browserSync    = require('browser-sync'),
+		autoprefixer   = require('gulp-autoprefixer'),
+		bourbon        = require('node-bourbon'),
+		notify         = require("gulp-notify");
 
 
-
-const siteRoot = '_site';
-const cssFiles = '_sass/**/*.sass';
-
-gulp.task('css', () => {
-	gulp.src(cssFiles)
-		.pipe(sass().on("error", notify.onError()))
-		.pipe(autoprefixer(['last 15 versions']))
-		.pipe(gulp.dest('css'));
+gulp.task('sass', function() {
+	return gulp.src('_sass/styles.sass')
+	.pipe(sass({
+		includePaths: bourbon.includePaths
+	}).on("error", notify.onError()))
+	//.pipe(rename({suffix: '.min', prefix : ''}))
+	.pipe(autoprefixer(['last 15 versions']))
+	//.pipe(cleanCSS())
+	.pipe(gulp.dest('css'))
+	.pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('jekyll', () => {
-	const jekyll = child.spawn('jekyll.bat', ['build',
-		'--watch',
-		'--incremental',
-		'--drafts'
-	]);
+// Task for building blog when something changed:
+// gulp.task('build', shell.task(['bundle exec jekyll build --watch']));
+// Or if you don't use bundle:
+gulp.task('build', shell.task(['jekyll build --watch']));
 
-	const jekyllLogger = (buffer) => {
-		buffer.toString()
-			.split(/\n/)
-			.forEach((message) => gutil.log('Jekyll: ' + message));
-	};
-
-	jekyll.stdout.on('data', jekyllLogger);
-	jekyll.stderr.on('data', jekyllLogger);
+// Task for serving blog with Browsersync
+gulp.task('serve', function () {
+    browserSync.init({server: {baseDir: '_site/'}});
+    // Reloads page when some of the already built files changed:
+    gulp.watch('_sass/**/*.sass', ['sass']);
+    gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
 
-gulp.task('serve', () => {
-	browserSync.init({
-		files: [siteRoot + '/**'],
-		port: 3000,
-		server: {
-			baseDir: siteRoot
-		}
-	});
-
-	gulp.watch(cssFiles, ['css']);
-});
-
-gulp.task('default', ['css', 'jekyll', 'serve']);
+gulp.task('default', ['sass', 'build', 'serve']);
