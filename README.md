@@ -1,5 +1,5 @@
 # serhii-css.com
 
-My personal website.
+My website.
 
 http://serhii-css.com/
