@@ -429,8 +429,11 @@ ul, li {
     .w-container {
       padding: 0 1em; } }
 
-header.main nav {
-  background-color: #0398db; }
+header.main {
+  background-color: #03A9F4;
+  background: -webkit-linear-gradient(110deg, #56CCF2, #2F80ED);
+  background: -o-linear-gradient(110deg, #56CCF2, #2F80ED);
+  background: linear-gradient(-20deg, #56CCF2, #2F80ED); }
   header.main nav ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -452,6 +455,7 @@ header.main nav {
       color: #fff;
       border-bottom: 3px solid transparent;
       -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
       transition: all 0.4s ease; }
       header.main nav ul a:hover, header.main nav ul a:focus {
         color: #02638f; }
@@ -660,7 +664,8 @@ section.portfolio {
 
 .portfolio_bg {
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
   height: 180px; }
 
 .kafeinate .portfolio_bg {
