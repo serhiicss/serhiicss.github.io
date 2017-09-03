@@ -478,10 +478,9 @@ footer {
     font-size: 1.5em; }
 
 .hero {
-  background-color: #03A9F4;
   text-align: center;
   padding: 1em 0 2em 0;
-  color: #fff; }
+  color: #03A9F4; }
   .hero h1 {
     font-size: 2.6rem;
     margin-top: 0.4em;
@@ -514,9 +513,13 @@ section.featured {
   section.featured h2 {
     padding-left: 0.5em;
     background-color: #03A9F4;
+    background: -webkit-linear-gradient(110deg, #56CCF2, #2F80ED);
+    background: -o-linear-gradient(110deg, #56CCF2, #2F80ED);
+    background: linear-gradient(-20deg, #56CCF2, #2F80ED);
     color: #fff;
     font-style: italic;
-    font-size: 2rem; }
+    font-size: 2rem;
+    line-height: 4rem; }
 
 .featured-post a,
 .featured-work a {
@@ -566,7 +569,10 @@ section.blog-page .post-title {
 section.blog-page .post-date {
   margin-bottom: 0.5em;
   color: #fff;
-  background-color: #03A9F4; }
+  background-color: #03A9F4;
+  background: -webkit-linear-gradient(110deg, #56CCF2, #2F80ED);
+  background: -o-linear-gradient(110deg, #56CCF2, #2F80ED);
+  background: linear-gradient(-20deg, #56CCF2, #2F80ED); }
 
 section.blog-page .post-title {
   display: inline-block;
