@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicons -->
+  <meta name="google-site-verification" content="wyq16zc1QNr_-89Xir-IExNkUGnT4LJumxFWRmXfwOk" />
+  <link rel="shortcut icon" href="assets/img/favicons/favicon.ico"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="assets/img/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <!-- favicons end-->
+  <title>Easily live reload your website with Browsersync (Windows)</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/styles.css" >
+</head>
+<body>
+  <!-- <div class="page-wrap"> -->
+    <header class="main">
+
+	<nav>
+		<ul class="w-container">
+			<li><a href="/">Home</a></li>
+			<li><a href="/blog.html">Blog</a></li>
+			<li><a href="/portfolio.html">Portfolio</a></li>
+		</ul>
+	</nav>
+
+</header>
+
+    <div class="content-wrap">
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Easily live reload your website with Browsersync (Windows)</h1>
+    <date class="post-date"><time datetime="2016-11-11T00:00:00+03:00" itemprop="datePublished">Nov 11, 2016</time></date>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>First of all, let's install node.js</p>
+
+<ol>
+	<li>Go to <a href="https://nodejs.org/">https://nodejs.org/</a></li>
+	<li>Download LTS (recommended) version</li>
+	<li>Install and restart computer</li>
+</ol>
+<p>Open a command prompt window, type in <b>node -v</b> and hit enter. If you see version number, node.js is installed properly.</p>
+
+<br>
+
+<p>Now, let's install and use BrowserSync.</p>
+
+
+<ol>
+	<li>In the command prompt type: <b>npm install -g browser-sync</b> and hit enter.</li>
+	<li>Navigate to your project folder.</li>
+	<li>Type in  <b>browser-sync start --server --files "*.html, *css/.css"</b></li>
+	<li>Change directories according to your project structure.</li>
+	<li>Hit enter and enjoy!</li>
+</ol>
+
+<p>Update: Make sure you have an index.html file in your project directory.</p>
+
+  </div>
+
+</article>
+
+    </div>
+    <footer>
+  <a href="https://plus.google.com/u/0/113544134561435695482/posts"><i class="fa fa-google-plus fa-2x"></i></a>
+  <a href="https://twitter.com/Serhiicss"><i class="fa fa-twitter fa-2x"></i></a>
+  <a href="https://www.facebook.com/serhii.borovskyi"><i class="fa fa-facebook fa-2x"></i></a>
+  <a href="https://github.com/serhiicss"><i class="fa fa-github fa-2x"></i></a>
+  <a href="mailto:serhii.css@gmail.com"><i class="fa fa-envelope fa-2x"></i></a>
+
+  <div class="copyright">&copy; Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script> Serhii Borovskyi</div> <!-- Timestamp automatically updates copyright year -->
+</footer>
+
+  <!-- </div> -->
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-88736724-1', 'auto');
+    ga('send', 'pageview');  
+  </script>
+  
+</body>
+</html>
