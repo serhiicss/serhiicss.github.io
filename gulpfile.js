@@ -51,4 +51,18 @@ gulp.task('serve', () => {
 	gulp.watch(cssFiles, ['css']);
 });
 
+
+//---------------------------------------------
+// Gulp task                                  |
+//---------------------------------------------
+
 gulp.task('default', ['css', 'jekyll', 'serve']);
+
+
+//---------------------------------------------
+// Push build to gh-pages                     |
+//---------------------------------------------
+gulp.task('deploy', function () {
+  return gulp.src("./site/**/*")
+    .pipe(deploy())
+});
