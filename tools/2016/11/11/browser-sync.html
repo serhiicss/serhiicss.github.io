@@ -13,7 +13,7 @@
   <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
   <!-- favicons end-->
-  <title>serhii.css</title>
+  <title>Easily live reload your website with Browsersync (Windows)</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/styles.css" >
 </head>
@@ -32,59 +32,41 @@
 </header>
 
     <div class="content-wrap">
-      <section class="blog-page w-container">
-	<ul class="post-list">
-		
-		<li>
-			<a href="/digest/2016/12/16/digest.html">
-				<date class="post-date">December 16, 2016</date>
-				<h2 class="post-title">December Digest. Learning Gulp, SASS and more</h2>
-				<p class="post-meta">Learning Gulp, SASS, Adobe XD. Creating a logo.</p>
-			</a>
-		</li>
-		
-		<li>
-			<a href="/tools/2016/11/11/browser-sync.html">
-				<date class="post-date">November 11, 2016</date>
-				<h2 class="post-title">Easily live reload your website with Browsersync (Windows)</h2>
-				<p class="post-meta">Reload website with Browsersync</p>
-			</a>
-		</li>
-		
-		<li>
-			<a href="/digest/2016/10/24/weekly-digest.html">
-				<date class="post-date">October 24, 2016</date>
-				<h2 class="post-title">Weekly Digest. Back in the game</h2>
-				<p class="post-meta">Returning to learn web-dev and stuff</p>
-			</a>
-		</li>
-		
-		<li>
-			<a href="/digest/2016/02/02/update.html">
-				<date class="post-date">February 02, 2016</date>
-				<h2 class="post-title">Weekly Digest. End of Jan update</h2>
-				<p class="post-meta">Being lazy. Learning typhography.</p>
-			</a>
-		</li>
-		
-		<li>
-			<a href="/digest/2016/01/11/weekly-digest.html">
-				<date class="post-date">January 11, 2016</date>
-				<h2 class="post-title">Weekly digest</h2>
-				<p class="post-meta">This is the first one.</p>
-			</a>
-		</li>
-		
-		<li>
-			<a href="/tools/2015/12/22/livereload.html">
-				<date class="post-date">December 22, 2015</date>
-				<h2 class="post-title">LiveReload. Install and use in Windows</h2>
-				<p class="post-meta">How to download, install and use LiveReload for Windows.</p>
-			</a>
-		</li>
-		
-	</ul>
-</section>
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Easily live reload your website with Browsersync (Windows)</h1>
+    <date class="post-date"><time datetime="2016-11-11T00:00:00+03:00" itemprop="datePublished">Nov 11, 2016</time></date>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>First of all, let's install node.js</p>
+
+<ol>
+	<li>Go to <a href="https://nodejs.org/">https://nodejs.org/</a></li>
+	<li>Download LTS (recommended) version</li>
+	<li>Install and restart computer</li>
+</ol>
+<p>Open a command prompt window, type in <b>node -v</b> and hit enter. If you see version number, node.js is installed properly.</p>
+
+<br>
+
+<p>Now, let's install and use BrowserSync.</p>
+
+
+<ol>
+	<li>In the command prompt type: <b>npm install -g browser-sync</b> and hit enter.</li>
+	<li>Navigate to your project folder.</li>
+	<li>Type in  <b>browser-sync start --server --files "*.html, *css/.css"</b></li>
+	<li>Change directories according to your project structure.</li>
+	<li>Hit enter and enjoy!</li>
+</ol>
+
+<p>Update: Make sure you have an index.html file in your project directory.</p>
+
+  </div>
+
+</article>
 
     </div>
     <footer>
