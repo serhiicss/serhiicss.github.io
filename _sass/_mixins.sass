@@ -1,18 +1,33 @@
 // -------------------------------------------
+//------------ POSITIONING MIXIN ------------
+// -------------------------------------------
+
+@mixin position-absolute ($top: null, $right: null, $bottom: null, $left: null)
+  position: absolute
+  top: $top
+  right: $right
+  bottom: $bottom
+  left: $left
+
+@mixin size ($width: null, $height: null)
+  width: $width
+  height: $height  
+
+// -------------------------------------------
 //------------ MEDIA QUERRY MIXIN ------------
 // -------------------------------------------
 // based on:
 // https://medium.freecodecamp.com/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862#.zc6z9l24u
 // -------------------------------------------
 
-// @mixin for-phone-only
-//   @media (max-width: 599px)
-//     @content
+@mixin for-phone-only
+  @media (max-width: 599px)
+    @content
 
 
-// @mixin for-tablet-portrait-up
-//   @media (min-width: 600px)
-//     @content
+@mixin for-tablet-portrait-up
+  @media (min-width: 600px)
+    @content
 
 
 // @mixin for-tablet-portait-only
