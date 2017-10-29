@@ -9,7 +9,7 @@ const gutil = require('gulp-util');
 const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const notify = require("gulp-notify");
-const deploy = require('gulp-gh-pages');
+// const deploy = require('gulp-gh-pages');
 
 
 
@@ -63,7 +63,7 @@ gulp.task('default', ['css', 'jekyll', 'serve']);
 //---------------------------------------------
 // Push build to gh-pages                     |
 //---------------------------------------------
-gulp.task('deploy', () => {
-  return gulp.src(['./_site/**/*', 'CNAME'])
-    .pipe(deploy({branch: 'master'}));
-});
+// gulp.task('deploy', () => {
+//   return gulp.src(['./_site/**/*', 'CNAME'])
+//     .pipe(deploy({branch: 'master'}));
+// });

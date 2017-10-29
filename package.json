@@ -1,14 +1,13 @@
 {
   "name": "serhiicss.github.io",
   "version": "1.0.0",
-  "description": "My website",
-  "main": "index.js",
+  "description": "serhii-css.com",
+  "main": "index.html",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-notify": "^3.0.0",
     "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.8",
@@ -16,15 +15,4 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/serhiicss/serhiicss.github.io.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/serhiicss/serhiicss.github.io/issues"
-  },
-  "homepage": "https://github.com/serhiicss/serhiicss.github.io#readme"
-}
+  }
