@@ -1,8 +1,8 @@
 {
   "name": "serhiicss.github.io",
   "version": "1.0.0",
-  "description": "serhii-css.com",
-  "main": "index.html",
+  "description": "My website",
+  "main": "index.js",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.18.13",
@@ -15,4 +15,15 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serhiicss/serhiicss.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serhiicss/serhiicss.github.io/issues"
+  },
+  "homepage": "https://github.com/serhiicss/serhiicss.github.io#readme"
+}
