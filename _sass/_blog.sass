@@ -1,0 +1,85 @@
+// 1. blog page (list of blog posts)
+// 2. blog post (individual posts)
+// 3. blog post featured on home page styled in main.sass
+
+
+// -------------------------------------------
+//------------ BLOG PAGE ---------------------
+// -------------------------------------------
+
+section.blog-page
+	ul
+		margin-top: 2em
+	li
+		box-shadow: 9px 9px 8px -4px rgba(136,136,136,0.47);
+		a
+			display: inline-block
+			width: 100%
+			padding: 2em 0
+			&:hover,
+			&:focus
+				background-color: lighten($color-primary, 40%)
+
+	.post-date,
+	.post-title,
+		padding: 0 0.5em
+	.post-date
+		margin-bottom: 0.5em
+		color: $color-invert
+		background-color: $color-secondary
+		background: linear-gradient(-20deg, #56CCF2, #2F80ED)		
+	.post-title
+		display: inline-block
+		margin-top: 0.3em
+		font-size: 2.1rem
+		color: darken($color-primary, 20%)
+	.post-meta
+		margin-top: 1em
+		color: $color-primary
+		font-size: 1.4rem
+		padding-left: 0.7em
+
+	@media (min-width: 600px)
+		li
+			margin-top: 2em
+		.post-title
+			font-size: 2.5rem
+		.post-meta
+			font-size: 1.8rem
+
+
+// -------------------------------------------
+//------------ POST PAGE ---------------------
+// -------------------------------------------
+
+article.post
+	max-width: 44em
+	margin: 0 auto
+	padding: 0 1em
+
+.post-header
+	margin: 2em 0
+	@media (min-width: 901px)
+		margin-top: 3em
+
+.post-date
+	display: block
+	margin-top: 1em
+	font-style: italic
+
+h1.post-title
+	font-size: 2rem
+	font-weight: bold
+	letter-spacing: 2px
+	@media (min-width: 901px)
+		font-size: 2.6rem
+
+a.post-title
+	font-size: 2rem
+
+.post-content
+	@media (min-width: 901px)
+		font-size: 2rem
+	ul
+		list-style: inherit
+		padding-left: 2em

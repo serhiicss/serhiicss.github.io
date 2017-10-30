@@ -1,0 +1,15 @@
+
+title: serhii.css
+description: Serhii Borovskyi. Teaching myself web design and development.
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - gulpfile.js
+  - package-lock.json

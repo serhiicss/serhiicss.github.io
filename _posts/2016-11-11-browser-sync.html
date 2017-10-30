@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "Easily live reload your website with Browsersync (Windows)"
+meta: Reload website with Browsersync
+date: 2016-11-11
+categories: tools
+---
+
+
+<p>First of all, let's install node.js</p>
+
+<ol>
+	<li>Go to <a href="https://nodejs.org/">https://nodejs.org/</a></li>
+	<li>Download LTS (recommended) version</li>
+	<li>Install and restart computer</li>
+</ol>
+<p>Open a command prompt window, type in <b>node -v</b> and hit enter. If you see version number, node.js is installed properly.</p>
+
+<br>
+
+<p>Now, let's install and use BrowserSync.</p>
+
+
+<ol>
+	<li>In the command prompt type: <b>npm install -g browser-sync</b> and hit enter.</li>
+	<li>Navigate to your project folder.</li>
+	<li>Type in  <b>browser-sync start --server --files "*.html, *css/.css"</b></li>
+	<li>Change directories according to your project structure.</li>
+	<li>Hit enter and enjoy!</li>
+</ol>
+
+<p>Update: Make sure you have an index.html file in your project directory.</p>
