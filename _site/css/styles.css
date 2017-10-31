@@ -5,7 +5,6 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@import url("https://fonts.googleapis.com/css?family=Fredoka+One");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -448,6 +447,7 @@ header.main {
             justify-content: space-around;
     padding: 0; }
     header.main nav ul li {
+      width: 33.33%;
       text-align: center; }
     header.main nav ul a {
       display: block;
@@ -488,6 +488,9 @@ footer {
   .hero p {
     letter-spacing: 0.28em;
     margin-top: 0.5em; }
+  .hero p.notice {
+    color: #ffa212;
+    letter-spacing: 0.22em; }
 
 .img-logo {
   width: 10em; }
@@ -697,65 +700,3 @@ section.portfolio {
 
 .portfolio_subtitle {
   padding: 0.5em 0; }
-
-.about-me {
-  color: #fff;
-  background-image: url("../assets/img/bg.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
-  margin-bottom: -6em; }
-  .about-me h1, .about-me h2 {
-    font-family: 'Fredoka One', cursive; }
-  .about-me h2 {
-    margin-top: 1.5em;
-    margin-bottom: 1em;
-    display: block;
-    border-bottom: 1px solid #fff; }
-  .about-me p {
-    margin-top: 1em; }
-  .about-me a {
-    color: #fff;
-    font-size: 1.8rem;
-    border: 1px dotted;
-    -webkit-border-radius: 5px;
-            border-radius: 5px;
-    padding: 0.2em 0.5em;
-    background-color: rgba(255, 255, 255, 0.1); }
-
-.flex-container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.section-content {
-  width: 100%;
-  height: 100%;
-  margin: 4em;
-  padding: 2em;
-  -webkit-border-radius: 15px;
-          border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.25); }
-  @media (max-width: 700px) {
-    .section-content {
-      margin: 0;
-      margin-top: 2em;
-      margin-bottom: 2em;
-      padding: 1em; } }
-
-h2.about-descr {
-  border-bottom: none; }
-
-.work-item {
-  margin-top: 2em; }

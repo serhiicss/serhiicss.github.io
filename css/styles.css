@@ -488,6 +488,9 @@ footer {
   .hero p {
     letter-spacing: 0.28em;
     margin-top: 0.5em; }
+  .hero p.notice {
+    color: #ffa212;
+    letter-spacing: 0.22em; }
 
 .img-logo {
   width: 10em; }

@@ -52,10 +52,6 @@ gulp.task('serve', () => {
 });
 
 gulp.task('default', ['css', 'jekyll', 'serve']);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 
 //---------------------------------------------
@@ -65,8 +61,3 @@ gulp.task('deploy', function () {
   return gulp.src("./site/**/*")
     .pipe(deploy())
 });
->>>>>>> parent of c686a37... gulp deploy task added
-=======
->>>>>>> parent of bd4bbb1... Update 2017-09-06T11:24:35.826Z
-=======
->>>>>>> parent of 19f2a1d... deploy task added
