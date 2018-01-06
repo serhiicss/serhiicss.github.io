@@ -1,0 +1,33 @@
+// Mixins
+// Background Cover Mixin
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@font-face {
+    font-family: 'infinite';
+    src: url('../fonts/infinite-webfont.woff2') format('woff2'),
+         url('../fonts/infinite-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Font Mixins
+@mixin logo-font {
+  font-family: 'infinite', Helvetica, Arial, sans-serif;
+}
+@mixin serif-font {
+  font-family: 'Roboto Mono', Helvetica, Arial, sans-serif;
+}
+@mixin script-font {
+  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+}
+@mixin body-font {
+  font-family: 'Roboto Mono', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin heading-font {
+  font-family: 'Rubik', Helvetica, Arial, sans-serif;
+}
