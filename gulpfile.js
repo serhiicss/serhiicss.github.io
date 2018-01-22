@@ -1,3 +1,6 @@
+// gulp dev - developer node_mode
+// gulp - production
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
