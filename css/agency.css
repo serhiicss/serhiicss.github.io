@@ -39,6 +39,8 @@ section {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px; }
+    section h2.section-heading::first-letter {
+      color: red; }
   section h3.section-subheading {
     font-size: 16px;
     font-weight: 400;
