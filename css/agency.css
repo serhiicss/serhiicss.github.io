@@ -150,14 +150,17 @@ header.masthead {
       font-size: 22px;
       font-style: italic;
       line-height: 22px;
-      margin-bottom: 25px;
+      margin-bottom: 40px;
       font-family: 'Roboto Mono', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-heading {
       font-size: 50px;
       font-weight: 700;
       line-height: 50px;
-      margin-bottom: 25px;
+      margin-bottom: 40px;
       font-family: 'Rubik', Helvetica, Arial, sans-serif; }
+  header.masthead .btn-xl {
+    font-size: 16px;
+    padding: 10px 20px; }
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
@@ -167,14 +170,17 @@ header.masthead {
       font-size: 32px;
       font-style: italic;
       line-height: 40px;
-      margin-bottom: 50px;
+      margin-bottom: 80px;
       font-family: 'Roboto Mono', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-heading {
       font-size: 75px;
       font-weight: 700;
       line-height: 75px;
-      margin-bottom: 50px;
-      font-family: 'Rubik', Helvetica, Arial, sans-serif; } }
+      margin-bottom: 80px;
+      font-family: 'Rubik', Helvetica, Arial, sans-serif; }
+  header.masthead .btn-xl {
+    font-size: 18px;
+    padding: 20px 40px; } }
 
 .service-heading {
   margin: 15px 0;
